@@ -368,8 +368,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322403976}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.06, y: 1.365, z: 1.67}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.08, y: 1.6299999, z: 1.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -461,13 +461,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.1602437, y: -0, z: -0, w: 0.98707753}
+  m_LocalPosition: {x: 0, y: 5.13, z: -12.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18.442, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -539,13 +539,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343259080}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.17974661, y: -0, z: -0, w: 0.983713}
-  m_LocalPosition: {x: 0, y: 1.1069999, z: 0.284}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.04, z: 0.284}
   m_LocalScale: {x: 1, y: 0.23409, z: 1.5675}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 457661400}
-  m_LocalEulerAnglesHint: {x: -20.71, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &343259082
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -891,7 +891,7 @@ Transform:
   m_GameObject: {fileID: 604491796}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.36, y: 3.22, z: 0}
+  m_LocalPosition: {x: 19.03, y: 3.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1135,7 +1135,7 @@ Transform:
   m_GameObject: {fileID: 1522814648}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.51, y: 1.57, z: 0}
+  m_LocalPosition: {x: -13.51, y: -0.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1206,12 +1206,19 @@ MonoBehaviour:
   pitchPivot: {fileID: 457661400}
   shootPosition: {fileID: 322403977}
   projectilePrefab: {fileID: 4920380110268602552, guid: 40ef97a09824c904dab82703df983bcb, type: 3}
-  yawSpeed: 90
-  pitchSpeed: 90
+  turretRenderer: {fileID: 343259083}
+  barrel: {fileID: 343259081}
+  camTransform: {fileID: 330585546}
+  yawSpeed: 120
+  pitchSpeed: 120
   shootAngle: 5
   shootInterval: 0.5
   minPitch: -45
   maxPitch: 20
+  recoilDistance: 0.2
+  recoilReturnSpeed: 5
+  shakeDuration: 0.1
+  shakeAmount: 0.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
